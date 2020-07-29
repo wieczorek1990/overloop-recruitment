@@ -1,1 +1,1 @@
-__all__ = ['article', 'region']
+__all__ = ['author', 'article', 'region']
