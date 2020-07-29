@@ -41,5 +41,4 @@ class Article(BaseModel):
         secondary=_article_region_table,
     )
 
-    author = Column(Integer, ForeignKey('author.id'),
-                    nullable=True, default=None)
+    author = Column(Integer, ForeignKey('author.id'))
