@@ -1,6 +1,7 @@
 from sqlalchemy import Column
 from sqlalchemy import Integer
 from sqlalchemy import Text
+from sqlalchemy.orm import relationship
 
 from techtest.connector import BaseModel
 
@@ -25,3 +26,5 @@ class Author(BaseModel):
         Text,
         name='last_name',
     )
+
+    articles = relationship('Article')

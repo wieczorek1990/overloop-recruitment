@@ -40,3 +40,6 @@ class Article(BaseModel):
         'Region',
         secondary=_article_region_table,
     )
+
+    author = Column(Integer, ForeignKey('author.id'),
+                    nullable=True, default=None)
